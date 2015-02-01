@@ -12,7 +12,7 @@ public:
 template <typename T>
 bool bubble(T a[], int n)
 {
-    bool sorted = true;//表示是否已经排序完成
+    bool sorted = true;//表示是否已经排序完成rrrr
     for(int i = 0; i < n; ++i)
     {
         if(a[i+1] < a[i])

@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     selectionsort.cpp \
-    bubblesort.cpp
+    bubblesort.cpp \
+    insertionsort.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -13,5 +14,6 @@ qtcAddDeployment()
 HEADERS += \
     selectionsort.h \
     Functions.h \
-    bubblesort.h
+    bubblesort.h \
+    insertionsort.h
 

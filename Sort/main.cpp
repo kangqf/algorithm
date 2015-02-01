@@ -3,6 +3,7 @@
 
 #include "selectionsort.h"
 #include "bubblesort.h"
+#include "insertionsort.h"
 
 using namespace std;
 
@@ -18,7 +19,8 @@ int main()
         cout<<arr[i]<<"  ";
 
     //selectionSort(arr,SIZE-1);
-    bubbleSort(arr,SIZE-1);
+    //bubbleSort(arr,SIZE-1);
+    insertionSort(arr,SIZE-1);
     cout<<" "<<endl<<"";
 
     for(int i = 0; i < SIZE-1; ++i)
