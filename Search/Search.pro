@@ -4,11 +4,13 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    sequentialsearch.cpp
+    sequentialsearch.cpp \
+    binarysearch.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    sequentialsearch.h
+    sequentialsearch.h \
+    binarysearch.h
 
