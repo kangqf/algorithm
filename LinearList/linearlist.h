@@ -1,7 +1,8 @@
 #ifndef LINEARLIST_H
 #define LINEARLIST_H
 
-class ostream;
+#include <iostream>
+using std::ostream;
 
 template <typename T>
 class LinearList
@@ -28,8 +29,6 @@ private:
 ////////////////////////////////////////////////////////////////////
 #include "linearlist.h"
 #include "except.h"
-
-#include <ostream>
 
 template <typename T>
 LinearList<T>::LinearList(int maxListSize)
@@ -89,7 +88,7 @@ LinearList<T> &LinearList<T>::Delete(int k, T &x)
 template <typename T>
 LinearList<T> &LinearList<T>::Insert(int k, const T &x)
 {
-    if(k < 1 || k > length)
+    if(k < 1 || k > maxSize)
     {
         throw OutOfBounds();
     }
@@ -118,7 +117,7 @@ void LinearList<T>::Output(ostream &out) const
 
 // 重载 << 运算符
 template <class T>
-ostream& operator <<(ostream& out, const LinearList<T>& x)
+ostream& operator<<(ostream &out, const LinearList<T> &x)
 {
     x.Output(out);
     return out;
