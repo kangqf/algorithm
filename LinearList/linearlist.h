@@ -25,8 +25,7 @@ private:
 
 };
 
-
-
+////////////////////////////////////////////////////////////////////
 #include "linearlist.h"
 #include "except.h"
 
@@ -124,13 +123,6 @@ ostream& operator <<(ostream& out, const LinearList<T>& x)
     x.Output(out);
     return out;
 }
-
-
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////////
 
 #endif // LINEARLIST_H
